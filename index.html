@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NORSE &amp; Portfolio</title>
+<meta name="description" content="Portfolio of NORSE, designer and developer.">
+
+<!-- Fonts: display serif for scale, grotesk for body, mono for utility labels -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,400&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================= -->
+<!-- NOISE / GRAIN OVERLAY -->
+<!-- ============================= -->
+<div class="grain"></div>
+
+<!-- ============================= -->
+<!-- CURSOR -->
+<!-- ============================= -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- ============================= -->
+<!-- SCROLL PROGRESS -->
+<!-- ============================= -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ============================= -->
+<!-- CUSTOM CURSOR REVEAL LAYER FOR HERO -->
+<!-- ============================= -->
+
+<!-- ============================= -->
+<!-- NAVIGATION -->
+<!-- ============================= -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-mark">
+      <!-- CHANGE INITIALS -->NR<span class="nav-mark-dot">.</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" data-section="about"><span class="nav-index">01</span>About</a>
+      <a href="#skills" data-section="skills"><span class="nav-index">02</span>Skills</a>
+      <a href="#work" data-section="work"><span class="nav-index">03</span>Work</a>
+      <a href="#services" data-section="services"><span class="nav-index">04</span>Services</a>
+      <a href="#timeline" data-section="timeline"><span class="nav-index">05</span>Journey</a>
+      <a href="#contact" data-section="contact"><span class="nav-index">06</span>Contact</a>
+    </nav>
+
+    <a href="#contact" class="nav-cta magnetic">
+      <span>Say Hello</span>
+    </a>
+
+    <button class="nav-burger" id="navBurger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============================= -->
+<!-- 1. HERO -->
+<!-- ============================= -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <div class="hero-gradient"></div>
+    <div class="hero-grid"></div>
+    <div class="floating-shape shape-1" data-speed="0.4"></div>
+    <div class="floating-shape shape-2" data-speed="0.7"></div>
+    <div class="floating-shape shape-3" data-speed="0.3"></div>
+    <div class="hero-ring ring-1"></div>
+    <div class="hero-ring ring-2"></div>
+  </div>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow reveal-line"><span class="reveal-inner">Portfolio — 2026</span></p>
+
+    <h1 class="hero-title">
+      <span class="line" data-line="1">
+        <span class="split-text"><!-- CHANGE NAME -->Mohamed</span>
+      </span>
+      <span class="line" data-line="2">
+        <span class="split-text"><!-- CHANGE SURNAME -->Norse</span>
+      </span>
+    </h1>
+
+    <div class="hero-sub reveal-line">
+      <p class="reveal-inner">
+        <!-- CHANGE TITLE -->Graphic Designer &amp; Front‑End Developer crafting
+        interfaces that feel inevitable.
+      </p>
+    </div>
+
+    <div class="hero-actions">
+      <a href="#work" class="btn btn-primary magnetic">
+        <span>View Work</span>
+        <svg class="btn-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <a href="#contact" class="btn btn-ghost magnetic">
+        <span>Let's Talk</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <span class="hero-scroll-track"><span class="hero-scroll-dot"></span></span>
+    <span class="hero-scroll-label">Scroll</span>
+  </div>
+
+  <div class="hero-marquee">
+    <div class="marquee-track">
+      <span>Social Media Design</span><span>&mdash;</span><span>Development</span><span>&mdash;</span>
+      </span><span>Design</span><span>&mdash;</span>
+      <span>Logo Design</span><span>&mdash;</span><span>Development</span><span>&mdash;</span>
+      <span>Branding</span><span>&mdash;</span><span>Strategy</span><span>&mdash;</span>
+    
+    </div>
+  </div>
+</section>
+
+<!-- ============================= -->
+<!-- 2. ABOUT -->
+<!-- ============================= -->
+<section class="about" id="about">
+  <div class="section-head">
+    <span class="section-tag">[ 01 / About ]</span>
+    <h2 class="section-title reveal-up">The person behind the pixels</h2>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-media tilt-card" data-tilt>
+      <div class="about-media-inner">
+        <!-- CHANGE ABOUT IMAGE: replace src with your photo -->
+        <img src="Man_in_black_suit_silhouette_202607122052 (1).jpeg" alt="Portrait placeholder" loading="lazy">
+        <div class="about-media-frame"></div>
+      </div>
+      <div class="about-badge">
+        <span class="about-badge-dot"></span>
+        Available for work
+      </div>
+    </div>
+
+    <div class="about-text">
+      <p class="about-lead reveal-up">
+        <!-- CHANGE ABOUT LEAD -->
+        I'm a graphic designer and developer who believes restraint is the highest form
+        of craft. For the last several years I've helped brands and startups
+        turn complex ideas into interfaces that feel effortless.
+      </p>
+      <p class="about-desc reveal-up">
+        <!-- CHANGE ABOUT DESCRIPTION -->
+        My process sits at the intersection of visual design and engineering —
+        I sketch, prototype, and ship, often in the same afternoon. I care
+        about typography, rhythm, and the small interactions that make a
+        product feel alive.
+      </p>
+
+      <div class="about-experience">
+        <div class="exp-card reveal-up">
+          <span class="exp-year"><!-- CHANGE YEAR -->2026 — Now</span>
+          <span class="exp-role"><!-- CHANGE ROLE --> Graphic Designer</span>
+          <span class="exp-company"><!-- CHANGE COMPANY -->Independent / Freelance</span>
+        </div>
+        <div class="exp-card reveal-up">
+          <span class="exp-year"><!-- CHANGE YEAR -->2021 — 2024</span>
+          <span class="exp-role"><!-- CHANGE ROLE -->Front‑End Developer</span>
+          <span class="exp-company"><!-- CHANGE COMPANY -->Studio Nexo</span>
+        </div>
+      </div>
+
+      <div class="about-stats">
+        <div class="stat-card reveal-up">
+          <span class="stat-number" data-count="5">0</span>
+          <span class="stat-label">Years</span>
+        </div>
+        <div class="stat-card reveal-up">
+          <span class="stat-number" data-count="32">0</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-card reveal-up">
+          <span class="stat-number" data-count="35">0</span>
+          <span class="stat-label">Clients</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= -->
+<!-- 3. SKILLS -->
+<!-- ============================= -->
+<section class="skills" id="skills">
+  <div class="section-head">
+    <span class="section-tag">[ 02 / Skills ]</span>
+    <h2 class="section-title reveal-up">Tools of the craft</h2>
+  </div>
+
+  <div class="skills-grid">
+
+    <div class="skill-card tilt-card" data-tilt>
+      <div class="skill-icon">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M3 3H21V21H3V3Z" stroke="currentColor" stroke-width="1.3"/><path d="M8 8H16M8 12H16M8 16H12" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+      </div>
+      <h3><!-- CHANGE SKILL -->Social Media Design</h3>
+      <p><!-- CHANGE SKILL DESC -->Creating engaging content for various social media platforms.</p>
+      <div class="skill-bar"><div class="skill-fill" data-level="95"></div></div>
+      <span class="skill-percent">95%</span>
+    </div>
+
+    <div class="skill-card tilt-card" data-tilt>
+      <div class="skill-icon">
+        <svg width="28" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 18L3 12L9 6M15 6L21 12L15 18" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <h3><!-- CHANGE SKILL -->Front‑End Development</h3>
+      <p><!-- CHANGE SKILL DESC -->HTML, CSS, JavaScript &amp; modern frameworks.</p>
+      <div class="skill-bar"><div class="skill-fill" data-level="90"></div></div>
+      <span class="skill-percent">90%</span>
+    </div>
+
+    <div class="skill-card tilt-card" data-tilt>
+      <div class="skill-icon">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.3"/><path d="M12 7V12L15 14" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+      </div>
+      <h3><!-- CHANGE SKILL -->Branding &amp; Identity</h3>
+      <p><!-- CHANGE SKILL DESC -->Developing cohesive brand systems and visual identities.</p>
+      <div class="skill-bar"><div class="skill-fill" data-level="88"></div></div>
+      <span class="skill-percent">88%</span>
+    </div>
+
+    <div class="skill-card tilt-card" data-tilt>
+      <div class="skill-icon">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M4 19V5C4 4.4 4.4 4 5 4H16L20 8V19C20 19.6 19.6 20 19 20H5C4.4 20 4 19.6 4 19Z" stroke="currentColor" stroke-width="1.3"/><path d="M8 12H16M8 16H13" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+      </div>
+      <h3><!-- CHANGE SKILL -->Brand Strategy</h3>
+      <p><!-- CHANGE SKILL DESC -->Positioning, voice and visual identity systems.</p>
+      <div class="skill-bar"><div class="skill-fill" data-level="80"></div></div>
+      <span class="skill-percent">80%</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================= -->
+<!-- 4. FEATURED DESIGN PROJECTS -->
+<!-- Each card = one image + one link button (e.g. Behance, Dribbble, -->
+<!-- or a case-study page). To add another project, copy one whole   -->
+<!-- <article class="work-card ..."> ... </article> block and paste  -->
+<!-- it again inside .work-list, then edit its marked placeholders.  -->
+<!-- ============================= -->
+<section class="work" id="work">
+  <div class="section-head">
+    <span class="section-tag">[ 03 / Selected Work ]</span>
+    <h2 class="section-title reveal-up">Featured design work</h2>
+  </div>
+
+  <div class="work-list">
+
+    <!-- ===== PROJECT CARD — duplicate this whole <article> to add more ===== -->
+    <article class="work-card tilt-card" data-tilt>
+      <div class="work-media">
+        <!-- CHANGE PROJECT IMAGE -->
+        <img src="logofolio.png" alt="Project preview" loading="lazy">
+        <div class="work-media-overlay"></div>
+      </div>
+      <div class="work-info">
+        <span class="work-category"><!-- CHANGE CATEGORY -->Branding · Visual Identity</span>
+        <h3 class="work-title"><!-- CHANGE PROJECT NAME -->LogoFolio</h3>
+        <p class="work-desc"><!-- CHANGE PROJECT DESCRIPTION -->A modern logo design and brand identity for a tech startup.</p>
+        <div class="work-links">
+          <!-- Single button: point it at your Behance / Dribbble / case-study link -->
+          <a href="https://www.behance.net/gallery/237185329/Logofolio" target="_blank" class="work-link magnetic"><!-- CHANGE PROJECT LINK -->View on Behance
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+      <span class="work-number">01</span>
+    </article>
+    <!-- ===== END PROJECT CARD ===== -->
+
+    <article class="work-card tilt-card" data-tilt>
+      <div class="work-media">
+        <!-- CHANGE PROJECT IMAGE -->
+        <img src="social-media-cover.png" alt="Project preview" loading="lazy">
+        <div class="work-media-overlay"></div>
+      </div>
+      <div class="work-info">
+        <span class="work-category"><!-- CHANGE CATEGORY -->Social Media · Content Creation</span>
+        <h3 class="work-title"><!-- CHANGE PROJECT NAME -->Social Media Designs</h3>
+        <p class="work-desc"><!-- CHANGE PROJECT DESCRIPTION -->A social media marketing campaign for a lifestyle brand.</p>
+        <div class="work-links">
+          <a href="https://www.behance.net/gallery/237187713/Social-Media" target="_blank" class="work-link magnetic"><!-- CHANGE PROJECT LINK -->View on Behance
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+      <span class="work-number">02</span>
+    </article>
+
+    <article class="work-card tilt-card" data-tilt>
+      <div class="work-media">
+        <!-- CHANGE PROJECT IMAGE -->
+        <img src="football-poster2.png" alt="Project preview" loading="lazy">
+        <div class="work-media-overlay"></div>
+      </div>
+      <div class="work-info">
+        <span class="work-category"><!-- CHANGE CATEGORY -->Football · Poster Design</span>
+        <h3 class="work-title"><!-- CHANGE PROJECT NAME -->World Cup Posters</h3>
+        <p class="work-desc"><!-- CHANGE PROJECT DESCRIPTION -->A series of vibrant poster designs for the upcoming World Cup tournament.</p>
+        <div class="work-links">
+          <a href="https://www.behance.net/gallery/251285223/Football-Posters-World-Cup" target="_blank" class="work-link magnetic"><!-- CHANGE PROJECT LINK -->View on Behance
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+      <span class="work-number">03</span>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============================= -->
+<!-- 4B. DEVELOPMENT PROJECTS (OPTIONAL) -->
+<!-- This whole section is a ready-to-use template for coding/dev -->
+<!-- projects, kept separate from the design work above. If you    -->
+<!-- don't need it right now, delete this entire <section>.        -->
+<!-- To add a project, copy one <article class="dev-card ..."> and -->
+<!-- paste it again inside .dev-list — it's built to be duplicated. -->
+<!-- ============================= -->
+<!-- <section class="dev-projects" id="dev-projects">
+  <div class="section-head">
+    <span class="section-tag">[ 03B / Development Work — optional ]</span>
+    <h2 class="section-title reveal-up">Code &amp; dev projects</h2>
+  </div>
+
+  <div class="dev-list">
+
+    <!-- ===== DEV CARD — duplicate this whole <article> to add more ===== -->
+     <!--<article class="dev-card tilt-card" data-tilt>
+      <div class="dev-media">
+        <!-- CHANGE PROJECT IMAGE -->
+        <!--<img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1200&q=80" alt="Project screenshot placeholder" loading="lazy">
+      </div>
+      <span class="dev-category"><!-- CHANGE CATEGORY --><!--Web App · React</span>
+      <!--<h3 class="dev-title"><!-- CHANGE PROJECT NAME --><!--Project Name</h3>
+      <!--<p class="dev-desc"><!-- CHANGE PROJECT DESCRIPTION --><!--One or two lines about what this project does and what you built it with.</p>
+     <!-- <div class="dev-links">
+        <a href="#" class="dev-link magnetic"><!-- CHANGE PROJECT LINK --><!--Visit Site</a>
+       <!-- <a href="#" class="dev-link dev-link-secondary magnetic"><!-- CHANGE GITHUB LINK --><!--GitHub</a>
+      <!--</div>
+   <!-- </article>
+    <!-- ===== END DEV CARD ===== -->
+
+    <!--<article class="dev-card tilt-card" data-tilt>
+      <div class="dev-media">
+        <!-- CHANGE PROJECT IMAGE -->
+    <!--    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&q=80" alt="Project screenshot placeholder" loading="lazy">
+      </div>
+      <span class="dev-category"><!-- CHANGE CATEGORY --><!--API · Node.js</span>
+   <!--   <h3 class="dev-title"><!-- CHANGE PROJECT NAME --><!--Project Name</h3>
+   <!--   <p class="dev-desc"><!-- CHANGE PROJECT DESCRIPTION --><!--One or two lines about what this project does and what you built it with.</p>
+   <!--   <div class="dev-links">
+        <a href="#" class="dev-link magnetic"><!-- CHANGE PROJECT LINK --><!--Visit Site</a>
+       <!-- <a href="#" class="dev-link dev-link-secondary magnetic"><!-- CHANGE GITHUB LINK --><!--GitHub</a>
+  <!--    </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============================= -->
+<!-- 5. SERVICES -->
+<!-- ============================= -->
+<section class="services" id="services">
+  <div class="section-head">
+    <span class="section-tag">[ 04 / Services ]</span>
+    <h2 class="section-title reveal-up">How I can help</h2>
+  </div>
+
+  <div class="services-grid">
+    <div class="service-card reveal-up">
+      <span class="service-index">01</span>
+      <div class="service-icon">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 3L21 8V16L12 21L3 16V8L12 3Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+      </div>
+      <h3><!-- CHANGE SERVICE -->Social Media Design</h3>
+      <p><!-- CHANGE SERVICE DESC -->Engaging content and visual strategies for social platforms.</p>
+    </div>
+    <div class="service-card reveal-up">
+      <span class="service-index">02</span>
+      <div class="service-icon">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 17L10 11L4 5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 19H20" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+      </div>
+      <h3><!-- CHANGE SERVICE -->Web Development</h3>
+      <p><!-- CHANGE SERVICE DESC -->Pixel‑accurate, performant builds with clean, scalable code.</p>
+    </div>
+    <div class="service-card reveal-up">
+      <span class="service-index">03</span>
+      <div class="service-icon">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.3"/><path d="M12 3V6M12 18V21M3 12H6M18 12H21" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+      </div>
+      <h3><!-- CHANGE SERVICE -->Brand Identity</h3>
+      <p><!-- CHANGE SERVICE DESC -->Logo, type, and visual systems that hold up at any size.</p>
+    </div>
+    <div class="service-card reveal-up">
+      <span class="service-index">04</span>
+      <div class="service-icon">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 6H20M4 12H20M4 18H14" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+      </div>
+      <h3><!-- CHANGE SERVICE -->Consulting</h3>
+      <p><!-- CHANGE SERVICE DESC -->Design audits and strategy sessions for growing teams.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= -->
+<!-- 6. TESTIMONIALS -->
+<!-- ============================= -->
+<section class="testimonials" id="testimonials">
+  <div class="section-head">
+    <span class="section-tag">[ 05 / Testimonials ]</span>
+    <h2 class="section-title reveal-up">Kind words</h2>
+  </div>
+
+  <div class="testi-slider">
+    <div class="testi-track" id="testiTrack">
+
+      <div class="testi-card">
+        <svg class="testi-quote" width="32" height="24" viewBox="0 0 32 24" fill="none"><path d="M13 0C6 3 2 8 2 15C2 20 5 24 10 24C14 24 17 20.5 17 16.5C17 13 14.5 10.5 11 10.5C10.3 10.5 9.7 10.6 9.2 10.8C9.7 6 12 2.5 16 0.5L13 0ZM29 0C22 3 18 8 18 15C18 20 21 24 26 24C30 24 33 20.5 33 16.5C33 13 30.5 10.5 27 10.5C26.3 10.5 25.7 10.6 25.2 10.8C25.7 6 28 2.5 32 0.5L29 0Z" fill="currentColor"/></svg>
+        <p><!-- CHANGE TESTIMONIAL -->Working with them was the smoothest design collaboration we've had. Every detail felt intentional.</p>
+        <div class="testi-person">
+          <img src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?w=200&q=80" alt="Client photo placeholder" loading="lazy">
+          <div>
+            <span class="testi-name"><!-- CHANGE CLIENT NAME -->Sarah Chen</span>
+            <span class="testi-role"><!-- CHANGE CLIENT ROLE -->CEO, Nova Banking</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card">
+        <svg class="testi-quote" width="32" height="24" viewBox="0 0 32 24" fill="none"><path d="M13 0C6 3 2 8 2 15C2 20 5 24 10 24C14 24 17 20.5 17 16.5C17 13 14.5 10.5 11 10.5C10.3 10.5 9.7 10.6 9.2 10.8C9.7 6 12 2.5 16 0.5L13 0ZM29 0C22 3 18 8 18 15C18 20 21 24 26 24C30 24 33 20.5 33 16.5C33 13 30.5 10.5 27 10.5C26.3 10.5 25.7 10.6 25.2 10.8C25.7 6 28 2.5 32 0.5L29 0Z" fill="currentColor"/></svg>
+        <p><!-- CHANGE TESTIMONIAL -->A rare mix of taste and technical skill. Our platform finally feels as good as our product.</p>
+        <div class="testi-person">
+          <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=200&q=80" alt="Client photo placeholder" loading="lazy">
+          <div>
+            <span class="testi-name"><!-- CHANGE CLIENT NAME -->Marcus Lee</span>
+            <span class="testi-role"><!-- CHANGE CLIENT ROLE -->Founder, Atelier</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card">
+        <svg class="testi-quote" width="32" height="24" viewBox="0 0 32 24" fill="none"><path d="M13 0C6 3 2 8 2 15C2 20 5 24 10 24C14 24 17 20.5 17 16.5C17 13 14.5 10.5 11 10.5C10.3 10.5 9.7 10.6 9.2 10.8C9.7 6 12 2.5 16 0.5L13 0ZM29 0C22 3 18 8 18 15C18 20 21 24 26 24C30 24 33 20.5 33 16.5C33 13 30.5 10.5 27 10.5C26.3 10.5 25.7 10.6 25.2 10.8C25.7 6 28 2.5 32 0.5L29 0Z" fill="currentColor"/></svg>
+        <p><!-- CHANGE TESTIMONIAL -->They translated a messy brief into something clear, confident, and genuinely beautiful.</p>
+        <div class="testi-person">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&q=80" alt="Client photo placeholder" loading="lazy">
+          <div>
+            <span class="testi-name"><!-- CHANGE CLIENT NAME -->Priya Anand</span>
+            <span class="testi-role"><!-- CHANGE CLIENT ROLE -->Head of Product, Pulse</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="testi-controls">
+      <button class="testi-btn" id="testiPrev" aria-label="Previous testimonial">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 3L5 8L10 13" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="testi-dots" id="testiDots"></div>
+      <button class="testi-btn" id="testiNext" aria-label="Next testimonial">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= -->
+<!-- 7. TIMELINE -->
+<!-- ============================= -->
+<section class="timeline" id="timeline">
+  <div class="section-head">
+    <span class="section-tag">[ 06 / Journey ]</span>
+    <h2 class="section-title reveal-up">Timeline</h2>
+  </div>
+
+  <div class="timeline-list">
+    <div class="timeline-line"><div class="timeline-line-fill" id="timelineFill"></div></div>
+
+    <div class="timeline-item reveal-up">
+      <span class="timeline-dot"></span>
+      <span class="timeline-year"><!-- CHANGE YEAR -->2026</span>
+      <div class="timeline-body">
+        <span class="timeline-type">Achievement</span>
+        <h3><!-- CHANGE ACHIEVEMENT -->Awwwards Site of the Day</h3>
+        <p><!-- CHANGE DESCRIPTION -->Recognized for the Nova Banking App redesign.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item reveal-up">
+      <span class="timeline-dot"></span>
+      <span class="timeline-year"><!-- CHANGE YEAR -->2024</span>
+      <div class="timeline-body">
+        <span class="timeline-type">Experience</span>
+        <h3><!-- CHANGE ROLE -->Senior Product Designer</h3>
+        <p><!-- CHANGE DESCRIPTION -->Went independent, working directly with founders and product teams.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item reveal-up">
+      <span class="timeline-dot"></span>
+      <span class="timeline-year"><!-- CHANGE YEAR -->2021</span>
+      <div class="timeline-body">
+        <span class="timeline-type">Experience</span>
+        <h3><!-- CHANGE ROLE -->Lead Front‑End Developer, Studio Nine</h3>
+        <p><!-- CHANGE DESCRIPTION -->Led a team of four building products for early‑stage startups.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item reveal-up">
+      <span class="timeline-dot"></span>
+      <span class="timeline-year"><!-- CHANGE YEAR -->2018</span>
+      <div class="timeline-body">
+        <span class="timeline-type">Education</span>
+        <h3><!-- CHANGE DEGREE -->BFA, Interaction Design</h3>
+        <p><!-- CHANGE DESCRIPTION -->Graduated with honors, focus on digital product design.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= -->
+<!-- 8. CONTACT -->
+<!-- ============================= -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <span class="section-tag">[ 07 / Contact ]</span>
+    <h2 class="contact-title reveal-up">
+      Let's build<br>something <em>timeless</em>.
+    </h2>
+
+    <div class="contact-grid">
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <label for="cName">Name</label>
+          <input type="text" id="cName" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-row">
+          <label for="cEmail">Email</label>
+          <input type="email" id="cEmail" name="email" placeholder="you@email.com" required>
+        </div>
+        <div class="form-row">
+          <label for="cMessage">Message</label>
+          <textarea id="cMessage" name="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary magnetic form-submit">
+          <span>Send Message</span>
+          <svg class="btn-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+
+      <div class="contact-details">
+        <div class="contact-detail-item">
+          <span class="contact-label">Email</span>
+          <a href="mhdmohmed8@gmail.com" class="contact-value magnetic"><!-- CHANGE EMAIL -->mhdmohmed8@gmail.com</a>
+        </div>
+        <div class="contact-detail-item">
+          <span class="contact-label">Phone</span>
+          <a href="tel:+201144076296" class="contact-value magnetic"><!-- CHANGE PHONE -->+20 114 407 6296</a>
+        </div>
+        <div class="contact-detail-item">
+          <span class="contact-label">Location</span>
+          <span class="contact-value"><!-- CHANGE LOCATION -->Remote / Worldwide</span>
+        </div>
+
+        <div class="contact-socials">
+          <a href="https://www.instagram.com/norse.nrs/" class="social-link magnetic"><!-- CHANGE INSTAGRAM -->Instagram</a>
+          <a href="https://www.behance.net/mohameddzn" class="social-link magnetic"><!-- CHANGE BEHANCE -->Behance</a>
+          <a href="https://github.com/ISO1242010" class="social-link magnetic"><!-- CHANGE GITHUB -->GitHub</a>
+          <a href="https://www.linkedin.com/in/norse-nrs-964523378/" class="social-link magnetic"><!-- CHANGE LINKEDIN -->LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-marquee">
+    <div class="marquee-track marquee-reverse">
+      <span><!-- CHANGE NAME -->Mohamed Norse</span><span>&mdash;</span>
+      <span><!-- CHANGE NAME -->Mohamed Norse</span><span>&mdash;</span>
+      <span><!-- CHANGE NAME -->Mohamed Norse</span><span>&mdash;</span>
+      <span><!-- CHANGE NAME -->Mohamed Norse</span><span>&mdash;</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= -->
+<!-- 9. FOOTER -->
+<!-- ============================= -->
+<footer class="footer">
+  <div class="footer-inner">
+    <span class="footer-mark"><!-- CHANGE INITIALS -->NR<span class="nav-mark-dot">.</span></span>
+    <p class="footer-copy">© <span id="footerYear">2026</span> <!-- CHANGE NAME -->Mohamed Norse. All rights reserved.</p>
+    <button class="footer-top magnetic" id="backToTop" aria-label="Back to top">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 13V3M8 3L3 8M8 3L13 8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
